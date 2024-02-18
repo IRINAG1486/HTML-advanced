@@ -218,6 +218,7 @@ $colorBrend: #f16d7f;
         width: 130px;
         height: 38px;
         background-color: $colorBrend;
+        border-radius: 3px;
         border: none;
         display: flex;
         align-items: center;
@@ -255,13 +256,18 @@ $colorBrend: #f16d7f;
         transition: all 0.3s;
     }
 
+    &__basket{
+        display: flex;
+    }
+
     .header__right-details{
         &[open] .header__right-text{
-            color: $colorBrend
+            color: $colorBrend;
         }
 
         &[open] .header__right-img{
-            fill: $colorBrend
+            fill: $colorBrend;
+            transform: rotate(180deg);
         }
 
         &[open] .header__right-button{
@@ -400,7 +406,6 @@ $colorBrend: #f16d7f;
         background: $colorBrend;
         color: #ffffff;
     }
-
 }
 
 .stars{
@@ -529,6 +534,11 @@ $colorBrend: #f16d7f;
 
     &__container-photo{
         margin-top: 10px;
+        transition: all 0.3s;
+    }
+
+    &__container-photo:hover{
+        box-shadow: 3px 3px 3px 1px grey;
     }
 
     &__last:hover &__container{
@@ -607,6 +617,7 @@ $colorBrend: #f16d7f;
    
     &__block{
         position: relative;
+        transition: all 0.5s;
     }
 
     &__link{
@@ -645,15 +656,8 @@ $colorBrend: #f16d7f;
         color: $colorBrend;
     }
 
-    &__block:hover &__photo {
-        box-shadow: 1px 1px 5px gray;
-        transform: scale(1.02);
-        transition: all 0.5s ease-in-out;
-    }
-    
-    &__block:hover  &__title{
-        transform: scale(1.02);
-        transition: all 0.5s ease-in-out;
+    &__block:hover{
+        filter: brightness(30%);
         }
 }
 
@@ -1015,6 +1019,25 @@ $colorBrend: #f16d7f;
        
     }
 
+}
+
+.pagination{
+    display: flex;
+    gap: 13px;
+
+    &__link{
+        width: 38px;
+        height: 4px;
+        background-color: #d6d6d6;
+    }
+
+    &-color{
+        background-color: #f16d7f;
+    }
+
+    &__link:hover{
+        background-color: #f16d7f;
+    }
 }
     
 .inform{
