@@ -747,6 +747,9 @@ $colorBrend: #f16d7f;
         background-color: #ffffff;
         border: 1px solid #eaeaea;
         width: 144px;
+        align-items: center;
+        justify-content: space-between;
+        
     }
 
     &__details{
@@ -766,9 +769,7 @@ $colorBrend: #f16d7f;
 
     &__summary{
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin: 9px 15px
+        padding: 12px 15px
     }
 
     &__left{
@@ -811,10 +812,40 @@ $colorBrend: #f16d7f;
         margin-right: 75px;
     }
 
+    &__select-size{
+        display: flex;
+        background-color: #ffffff;
+        border: 1px solid #eaeaea;
+        width: 144px;
+
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #bcbcbc;
+
+        padding: 12px 15px;
+    }
+
+    &__option{
+        font-family: Lato;
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #bcbcbc;
+    }
+
+    &__option{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 9px 15px
+    }
+
 
     &__field{
         width: 127px;
-        height: 33px;
+        height: 40px;
         display: flex;
         padding-left: 15px;
         background-color: #ffffff;
@@ -829,13 +860,8 @@ $colorBrend: #f16d7f;
 
     &__button{
         display: flex;
-        // gap: 15px;
         justify-content: center;
         margin-bottom: 122px;
-    }
-            
-    &__link{
-        display: flex;
         align-items: center;
         gap: 15px;
         padding: 22px 206px;
@@ -843,7 +869,7 @@ $colorBrend: #f16d7f;
         background-color: #ffffff;
         border: 1px solid #ef5b70;
     }
-
+            
     &__icon{
         fill:#ef5b70;
     }
@@ -857,19 +883,19 @@ $colorBrend: #f16d7f;
         
     }
 
-    &__link:hover{
+    &__button:hover{
         background:  #ef5b70;
         transition: all 0.5s;
     }
     
 
-    &__link:hover .slider__icon{
+    &__button:hover .slider__icon{
         fill: #FFFFFF;
         transition: all 0.5s;
     
     }
 
-    &__link:hover .slider__button-text{
+    &__button:hover .slider__button-text{
         color: #FFFFFF;
         transition: all 0.5s;
     }
