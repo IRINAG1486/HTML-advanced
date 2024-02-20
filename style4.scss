@@ -57,8 +57,7 @@ $colorBrend: #f16d7f;
         }
 
         &[open] .header__searche-img{
-            fill: $colorBrend;
-            transform: rotate(180deg);
+            fill: $colorBrend
         }
     }
 
@@ -206,11 +205,21 @@ $colorBrend: #f16d7f;
         align-items: flex-end;
     }
 
+    .hover_svg{
+        fill: #222222;
+    }
+
+    &__basket-details{
+        &[open] .hover_svg{
+            fill: $colorBrend;
+        }
+    }
+
     &__basket{
         width: 32px;
         height: 29px;
-        fill:#a4a4a4;;
-
+        fill:#a4a4a4;
+        display: flex;
     }
 
     &__right-button{
@@ -257,9 +266,6 @@ $colorBrend: #f16d7f;
         transition: all 0.3s;
     }
 
-    &__basket{
-        display: flex;
-    }
 
     .header__right-details{
         &[open] .header__right-text{
@@ -268,7 +274,6 @@ $colorBrend: #f16d7f;
 
         &[open] .header__right-img{
             fill: $colorBrend;
-            transform: rotate(180deg);
         }
 
         &[open] .header__right-button{
@@ -289,8 +294,23 @@ $colorBrend: #f16d7f;
         display: flex;
         // gap: 16px;
         flex-direction: column;
-        margin-left: -80px;
+        margin-left: -35px;
     }
+
+    &__right-box::before{
+        content: " ";
+        display: block;
+        height: 10px;
+        width: 10px;
+        position: absolute;
+        background-color:#ffffff;
+        // border-top:  1px solid #e8e8e8;
+        // border-left:  1px solid #e8e8e8;
+        transform: rotate(45deg);
+        top: -6px;
+        left: 50px;
+    }
+
 
     &__right-item{
         display: flex;
@@ -407,7 +427,6 @@ $colorBrend: #f16d7f;
         background: $colorBrend;
         color: #ffffff;
     }
-
 }
 
 .stars{
