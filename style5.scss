@@ -58,7 +58,6 @@ $colorBrend: #f16d7f;
 
         &[open] .header__searche-img{
             fill: $colorBrend;
-            transform: rotate(180deg);
         }
     }
 
@@ -214,8 +213,6 @@ $colorBrend: #f16d7f;
     }
 
     &__right-button{
-        // padding-top: 44px;
-        // padding-bottom: 42px;
         width: 130px;
         height: 38px;
         background-color: $colorBrend;
@@ -1127,7 +1124,7 @@ $colorBrend: #f16d7f;
         line-height: 26px;
         font-weight: 700;
         letter-spacing: 0.025em;
-        color: #f16d7f;
+        color: $colorBrend;
     }
 
     &__menu{

@@ -223,8 +223,6 @@ $colorBrend: #f16d7f;
     }
 
     &__right-button{
-        // padding-top: 44px;
-        // padding-bottom: 42px;
         width: 130px;
         height: 38px;
         background-color: $colorBrend;
@@ -292,7 +290,6 @@ $colorBrend: #f16d7f;
         top: 85px;  
         z-index: 1;
         display: flex;
-        // gap: 16px;
         flex-direction: column;
         margin-left: -35px;
     }
@@ -304,8 +301,6 @@ $colorBrend: #f16d7f;
         width: 10px;
         position: absolute;
         background-color:#ffffff;
-        // border-top:  1px solid #e8e8e8;
-        // border-left:  1px solid #e8e8e8;
         transform: rotate(45deg);
         top: -6px;
         left: 50px;
@@ -432,12 +427,12 @@ $colorBrend: #f16d7f;
 .stars{
     display: flex;
     
-
     &_full{
        width: 12px;
        height: 12px;
         fill: #e4af48;
     }
+
     &_half{
         width: 12px;
         height: 12px;
@@ -446,11 +441,6 @@ $colorBrend: #f16d7f;
 }
 
 .navigation{
-
-    &__box{
-        // padding-top: 19px;
-        // padding-bottom: 22px;
-    }
 
     &__ul{
         display: flex;
@@ -684,8 +674,6 @@ $colorBrend: #f16d7f;
 
 .future{
     padding-bottom: 113px;
-    
-
 
     &__heading{
         display: flex;
@@ -898,13 +886,11 @@ $colorBrend: #f16d7f;
 
     &__block:hover &__img {
         filter: drop-shadow(3px 3px 3px #f16d7f);
-        // transform: scale(1.02);
         transition: all 0.5s;   
     }
     
     &__block:hover &__title {
         filter: drop-shadow(3px 3px 3px #ffff);
-        // transform: scale(1.02);  
         transition: all 0.5s;   
     }
 }
@@ -1053,11 +1039,11 @@ $colorBrend: #f16d7f;
     }
 
     &-color{
-        background-color: #f16d7f;
+        background-color: $colorBrend;
     }
 
     &__link:hover{
-        background-color: #f16d7f;
+        background-color: $colorBrend;
     }
 }
     
@@ -1105,7 +1091,7 @@ $colorBrend: #f16d7f;
         line-height: 26px;
         font-weight: 700;
         letter-spacing: 0.025em;
-        color: #f16d7f;
+        color: $colorBrend;
     }
 
     &__menu{

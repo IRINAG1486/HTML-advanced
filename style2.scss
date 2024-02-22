@@ -689,7 +689,7 @@ $colorBrend: #f16d7f;
         font-size: 14px;
         line-height: 24px;
         font-weight: 700;
-        color: #f16d7f;
+        color:$colorBrend;
         margin-bottom: 14px;
     }
 
@@ -742,7 +742,7 @@ $colorBrend: #f16d7f;
         font-size: 24px;
         line-height: 24px;
         font-weight: 700;
-        color: #ef5b70;
+        color: $colorBrend;
         margin-bottom: 43px;
     }
 
@@ -891,7 +891,7 @@ $colorBrend: #f16d7f;
     }
             
     &__icon{
-        fill:#ef5b70;
+        fill: $colorBrend;
     }
     
     &__button-text{
@@ -899,12 +899,12 @@ $colorBrend: #f16d7f;
         font-size: 16px;
         line-height: 1.2;
         font-weight: 700;
-        color: #ef5b70;
+        color: $colorBrend;
         
     }
 
     &__button:hover{
-        background:  #ef5b70;
+        background: $colorBrend;
         transition: all 0.5s;
     }
     
@@ -937,7 +937,7 @@ $colorBrend: #f16d7f;
     &__center{
         width: 63px;
         height: 3px;
-        background-color: #ef5b70;
+        background-color: $colorBrend;
         position: absolute;
     }
 }
@@ -1252,7 +1252,7 @@ $colorBrend: #f16d7f;
         line-height: 26px;
         font-weight: 700;
         letter-spacing: 0.025em;
-        color: #f16d7f;
+        color: $colorBrend;
     }
 
     &__menu{

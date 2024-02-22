@@ -49,7 +49,6 @@
 }
 .header__searche-details[open] .header__searche-img {
   fill: #f16d7f;
-  transform: rotate(180deg);
 }
 .header__searche-button {
   width: 87px;

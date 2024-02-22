@@ -666,11 +666,11 @@ $colorBrend: #f16d7f;
 
         &[open]  .product__left-img{
            transform: rotate(180deg);
-           fill: #ef5b70;
+           fill: $colorBrend;
         }
 
         &[open]  .product__left-text{
-            color: #ef5b70;
+            color: $colorBrend;
          }
 
     }
@@ -749,15 +749,15 @@ $colorBrend: #f16d7f;
         color: $colorBrend;
     }
 
-    .product__choice{
+    &__choice{
         display: flex;
     }
 
-    .product__trend{
+    &__trend{
         width: 176px;
     }
 
-    .product__trend-title{
+    &__trend-title{
         font-family: Lato;
         font-size: 14px;
         line-height: 20px;
@@ -767,24 +767,24 @@ $colorBrend: #f16d7f;
         margin-bottom: 25px;
     }
 
-    .product__trend-box{
+    &__trend-box{
         display: flex;
         flex-wrap: wrap;
        
     }
 
-.product__trend-input{
-    display: none;
-}
+    &__trend-input{
+        display: none;
+    }
 
-    .product__trend-label:not(:last-child):after{
+    &__trend-label:not(:last-child):after{
         content: '|';
         padding-left: 3px;
         padding-right: 3px;
         color: #dfdfdf;
     }
 
-    .product__trend-label{
+    &__trend-label{
         font-family: Lato;
         font-size: 14px;
         line-height: 26px;
@@ -793,17 +793,17 @@ $colorBrend: #f16d7f;
         cursor: pointer;
     }
 
-    .product__trend-label:hover{
+    &__trend-label:hover{
         color: $colorBrend;
     }
 
-    .product__size{
+    &__size{
         width: 238px;
         margin-left: 114px;
         margin-right: 58px;
     }
 
-    .product__size-title{
+    &__size-title{
         font-family: Lato;
         font-size: 14px;
         line-height: 20px;
@@ -813,43 +813,42 @@ $colorBrend: #f16d7f;
         margin-bottom: 25px;
     }
 
-    .product__size-box{
+    &__size-box{
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
         justify-content: flex-start;
     }
 
-    .product__size-check{
+    &__size-check{
         display: flex;
         gap: 9px;
         align-items: center;
         font-family: Lato;
         font-size: 14px;
-        // line-height: 20px;
         font-weight: 400;
         text-transform: uppercase;
         color: #6f6e6e;
     }
 
-    .product__size-input{
+    &__size-input{
         cursor: pointer;
     }
 
-    .product__size-label{
+    &__size-label{
         cursor: pointer;
     }
 
-    .product__size-check:hover{
+    &__size-check:hover{
        color: $colorBrend
     }
     
 
-    .product__price{
+    &__price{
         width: 262px;
     }
 
-    .product__price-title{
+    &__price-title{
         font-family: Lato;
         font-size: 14px;
         line-height: 20px;
@@ -859,17 +858,17 @@ $colorBrend: #f16d7f;
         margin-bottom: 25px;
     }
 
-    .product__range{
+    &__range{
         display: flex;
         gap: 21px;
         flex-direction: column;
     }
 
-    .product__input{
+    &__input{
         width: 262px;
     }
 
-    .product__range-num{
+    &__range-num{
         display: flex;
         align-items: baseline;
 
@@ -881,7 +880,7 @@ $colorBrend: #f16d7f;
        
     }
 
-        .product__sort{
+    &__sort{
         background-color: #f3f3f3;
         display: flex;
         gap: 10px;
@@ -890,16 +889,16 @@ $colorBrend: #f16d7f;
         margin-bottom: 48px;
     }
 
-    .product__sort-box{
+    &__sort-box{
         display: flex;
-}
+    }
 
-.product__sort-box:hover .product__sort-info{
-    color: $colorBrend;
-}
+    &__sort-box:hover .product__sort-info{
+        color: $colorBrend;
+    }
     
 
-    .product__sort-info{
+    &__sort-info{
         font-family: Lato;
         font-size: 14px;
         font-weight: 400;
@@ -910,7 +909,7 @@ $colorBrend: #f16d7f;
         padding: 10px 13px 10px 13px;
     }
 
-    .product__sort-select{
+    &__sort-select{
         background-color: #ffffff;
         border: 1px solid #ebebeb;
         padding: 10px 13px 10px 13px;
@@ -1012,12 +1011,13 @@ $colorBrend: #f16d7f;
         color: #ffffff;
     }
 
-    .product__hover-twice{
+    &__hover-twice{
         display: flex;
         gap: 9px;
         margin-top: 8px;
     }
-    .product__hover-link2{
+
+    &__hover-link2{
         width: 35px;
     }
 
@@ -1092,31 +1092,24 @@ $colorBrend: #f16d7f;
 }
 
 .guaranties{
+    //inline-block
     background-color: #222224;
     background-size: cover;
     padding-top: 89px;
     padding-bottom: 114px;
-    display: flex;
-    justify-content: space-between;
-    
-
+    text-align: center;
+   
     &__block{
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-        align-items: center;
-        max-width: 261px;
-        transition: all 2s;   
+       display: inline-block;
     }
 
+    &__block:not(:last-child){
+       margin-right: 32px;
+    }
 
     &__text{
-        width: 219px;
-        display: flex;
-        gap: 17px;
-        flex-direction: column;
-        align-items: center;
         width: 310px;
+        margin-top: 32px;
     }
 
     &__title{
@@ -1135,6 +1128,36 @@ $colorBrend: #f16d7f;
         letter-spacing: 0.025em;
         color: #fbfbfb;
         text-align: center;
+        margin-top: 17px;
+    }
+
+// flex
+
+    display: flex;
+    justify-content: space-between;
+    
+    &__block{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+    }
+
+    &__block:not(:last-child){
+        margin-right: 0;
+     }
+
+    &__text{
+        display: flex;
+        gap: 17px;
+        flex-direction: column;
+        align-items: center;
+        // width: 310px;
+        margin-top: 0;
+    }
+
+    &__description{
+        margin-top: 17px;
     }
 
     &__block:hover &__img {
@@ -1346,7 +1369,7 @@ $colorBrend: #f16d7f;
         line-height: 26px;
         font-weight: 700;
         letter-spacing: 0.025em;
-        color: #f16d7f;
+        color: $colorBrend;
     }
 
     &__menu{

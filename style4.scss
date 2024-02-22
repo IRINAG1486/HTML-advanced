@@ -645,13 +645,14 @@ $colorBrend: #f16d7f;
 }
 
 .checkout{
-padding-top: 89px;
-padding-bottom: 93px;
+    padding-top: 89px;
+    padding-bottom: 93px;
 
     &__details{
         border-bottom: 1px solid  #e8e8e8;
         padding-top: 33px;
         padding-bottom: 31px;
+       
 
         &[open]{
             color: $colorBrend;
@@ -679,6 +680,7 @@ padding-bottom: 93px;
         font-weight: 700;
         text-transform: uppercase;
         color: #222222;
+        cursor: pointer;
     }
 
     &__summary:hover{
@@ -1110,7 +1112,7 @@ padding-bottom: 93px;
         line-height: 26px;
         font-weight: 700;
         letter-spacing: 0.025em;
-        color: #f16d7f;
+        color: $colorBrend;
     }
 
     &__menu{
