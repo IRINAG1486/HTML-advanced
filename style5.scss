@@ -44,7 +44,13 @@ $colorBrend: #f16d7f;
     background-color: #ffffff;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
    
+    &__right-container{
+        display: flex;
+        align-items: center;
+    }
 
     &__searche{
         display: flex;
@@ -57,7 +63,7 @@ $colorBrend: #f16d7f;
         }
 
         &[open] .header__searche-img{
-            fill: $colorBrend;
+            fill: $colorBrend
         }
     }
 
@@ -201,15 +207,25 @@ $colorBrend: #f16d7f;
     &__right{
         display: flex;
         gap: 26px;
-        margin-left: 349px;
+        // margin-left: 349px;
         align-items: flex-end;
+    }
+
+    .hover_svg{
+        fill: #222222;
+    }
+
+    &__basket-details{
+        &[open] .hover_svg{
+            fill: $colorBrend;
+        }
     }
 
     &__basket{
         width: 32px;
         height: 29px;
-        fill:#a4a4a4;;
-
+        fill:#a4a4a4;
+        display: flex;
     }
 
     &__right-button{
@@ -254,9 +270,6 @@ $colorBrend: #f16d7f;
         transition: all 0.3s;
     }
 
-    &__basket{
-        display: flex;
-    }
 
     .header__right-details{
         &[open] .header__right-text{
@@ -265,7 +278,6 @@ $colorBrend: #f16d7f;
 
         &[open] .header__right-img{
             fill: $colorBrend;
-            transform: rotate(180deg);
         }
 
         &[open] .header__right-button{
@@ -284,10 +296,22 @@ $colorBrend: #f16d7f;
         top: 85px;  
         z-index: 1;
         display: flex;
-        // gap: 16px;
         flex-direction: column;
-        margin-left: -80px;
+        margin-left: -35px;
     }
+
+    &__right-box::before{
+        content: " ";
+        display: block;
+        height: 10px;
+        width: 10px;
+        position: absolute;
+        background-color:#ffffff;
+        transform: rotate(45deg);
+        top: -6px;
+        left: 50px;
+    }
+
 
     &__right-item{
         display: flex;
@@ -404,7 +428,6 @@ $colorBrend: #f16d7f;
         background: $colorBrend;
         color: #ffffff;
     }
-
 }
 
 .stars{
@@ -429,8 +452,9 @@ $colorBrend: #f16d7f;
         display: flex;
         gap: 40px;
         justify-content: center;
-        height: 51px;
+        min-height: 51px;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     &__li{
@@ -534,8 +558,6 @@ $colorBrend: #f16d7f;
         box-shadow: 3px 3px 3px 1px grey;
     }
 
-  
-
     &__last:hover &__container{
         right: 0;
         left: auto;
@@ -558,6 +580,7 @@ $colorBrend: #f16d7f;
     display: flex;
     align-items: center; 
     justify-content: space-between;
+    flex-wrap: wrap;
 
     &__title{
         font-family: Lato;
@@ -568,7 +591,6 @@ $colorBrend: #f16d7f;
         color: $colorBrend;
     }
 }
-
 .breadcrumbs{
 
     &__ul{
@@ -750,6 +772,7 @@ $colorBrend: #f16d7f;
     &__buttons{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     &__button{
@@ -930,7 +953,7 @@ $colorBrend: #f16d7f;
 
 .subscription {
     background-image: url(./img2/background-subscription.png);
-    height: 438px;
+    min-height: 438px;
     background-color: rgba(242,242,242,0.5);
     background-size: cover;
     background-blend-mode: overlay;
@@ -938,6 +961,7 @@ $colorBrend: #f16d7f;
     display: flex;
     gap: 165px;
     align-items: center; 
+    flex-wrap: wrap;
     
     &__figure{
         display: flex;
@@ -1085,6 +1109,7 @@ $colorBrend: #f16d7f;
     padding-bottom: 89px;
     display: flex;
     gap: 64px;
+    flex-wrap: wrap;
 
     &__description{
         display: flex;
@@ -1109,6 +1134,7 @@ $colorBrend: #f16d7f;
     &__subdivision{
         display: flex;
         gap: 24px;
+        flex-wrap: wrap;
     }
 
     &__block{
@@ -1153,6 +1179,7 @@ $colorBrend: #f16d7f;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     
 
     &__text{

@@ -39,6 +39,12 @@
   background-color: #ffffff;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header__right-container {
+  display: flex;
+  align-items: center;
 }
 .header__searche {
   display: flex;
@@ -167,7 +173,6 @@
 .header__right {
   display: flex;
   gap: 26px;
-  margin-left: 349px;
   align-items: flex-end;
 }
 .header .hover_svg {
@@ -369,8 +374,9 @@
   display: flex;
   gap: 40px;
   justify-content: center;
-  height: 51px;
+  min-height: 51px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .navigation__li {
   list-style-type: none;
@@ -473,6 +479,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .arrival__title {
   font-family: Lato;
@@ -743,7 +750,7 @@
 
 .subscription {
   background-image: url(./img2/background-subscription.png);
-  height: 438px;
+  min-height: 438px;
   background-color: rgba(242, 242, 242, 0.5);
   background-size: cover;
   background-blend-mode: overlay;
@@ -751,6 +758,7 @@
   display: flex;
   gap: 165px;
   align-items: center;
+  flex-wrap: wrap;
 }
 .subscription__figure {
   display: flex;
@@ -875,6 +883,7 @@
   padding-bottom: 89px;
   display: flex;
   gap: 64px;
+  flex-wrap: wrap;
 }
 .inform__description {
   display: flex;
@@ -896,6 +905,7 @@
 .inform__subdivision {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 .inform__block {
   width: 200px;
@@ -934,6 +944,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .footer__text {
   font-family: Lato;
